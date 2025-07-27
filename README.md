@@ -33,6 +33,22 @@ The tool supports multiple explorers by configuring valid API keys and base URLs
   A text file listing wallet addresses to be processed.
 
 ---
+## Subprojects
+
+### 1. `CONTRACTS/`
+
+- Downloads verified smart contract code from Hugging Face.
+- Splits contract files into `.sol` and `.txt` formats.
+- Stores them locally for further analysis or classification.
+
+### 2. `SIGNATURES/`
+
+- Scrapes function and event signatures from [4byte.directory](https://www.4byte.directory/).
+- Converts signatures into hexadecimal selectors.
+- Stores the results into MongoDB using customizable settings.
+
+---
+
 ## Requirements
 
 - Python 3.x
