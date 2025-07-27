@@ -1,0 +1,195 @@
+{
+  "explorers": {
+    "etherscan": {
+      "name": "Ethereum",
+      "url": "https://api.etherscan.io/api",
+      "apikey": "RWS9GMH8EA5DHZGH6VDGSFKS3WMM8PG8JH"
+    },
+    "bscScan": {
+      "name": "Binance Smart Chain",
+      "url": "https://api.bscscan.com/api",
+      "apikey": "MNDH8QQPNH4KF9BGXV3ZTI8B5FATDSPZKB"
+    },
+    "polygonScan": {
+      "name": "Polygon",
+      "url": "https://api.polygonscan.com/api",
+      "apikey": "D5ZTP86RM55WAR88NTWPG8R175S8WT1QYB"
+    },
+    "arbiscan": {
+      "name": "Arbitrum",
+      "url": "https://api.arbiscan.io/api",
+      "apikey": "<your_api_key_here>"
+    },
+    "optimism": {
+      "name": "Optimism",
+      "url": "https://api-optimistic.etherscan.io/api",
+      "apikey": "<your_api_key_here>"
+    },
+    "FTMScan": {
+      "name": "Fantom",
+      "url": "https://api.ftmscan.com/api",
+      "apikey": "<your_api_key_here>"
+    },
+    "avalanche": {
+      "name": "Avalanche",
+      "url": "https://api.snowtrace.io/api",
+      "apikey": "<your_api_key_here>"
+    },
+    "moonriver": {
+      "name": "Moonriver",
+      "url": "https://api-moonriver.moonscan.io/api",
+      "apikey": "<your_api_key_here>"
+    },
+    "linea": {
+      "name": "Linea",
+      "url": "https://api.lineascan.build/api",
+      "apikey": "<your_api_key_here>"
+    },
+    "base": {
+      "name": "Base",
+      "url": "https://api.basescan.org/api",
+      "apikey": "<your_api_key_here>"
+    },
+    "zksync": {
+      "name": "zkSync",
+      "url": "https://explorer.zksync.io/api",
+      "apikey": "<your_api_key_here>"
+    },
+    "scroll": {
+      "name": "Scroll",
+      "url": "https://api.scrollscan.com/api",
+      "apikey": "<your_api_key_here>"
+    },
+    "blast": {
+      "name": "Blast",
+      "url": "https://api.blastscan.io/api",
+      "apikey": "<your_api_key_here>"
+    },
+    "gnosis": {
+      "name": "Gnosis",
+      "url": "https://api.gnosisscan.io/api",
+      "apikey": "<your_api_key_here>"
+    },
+    "cronos": {
+      "name": "Cronos",
+      "url": "https://api.cronoscan.com/api",
+      "apikey": "<your_api_key_here>"
+    },
+    "heco": {
+      "name": "Heco",
+      "url": "https://api.hecoinfo.com/api",
+      "apikey": "<your_api_key_here>"
+    },
+    "astar": {
+      "name": "Astar",
+      "url": "https://astar.subscan.io/api",
+      "apikey": "<your_api_key_here>"
+    },
+    "mantle": {
+      "name": "Mantle",
+      "url": "https://api.mantlescan.xyz/api",
+      "apikey": "UDM1TYDW2V36JJ6C8F4KWKNW4SE5MZACJM"
+    },
+    "celo": {
+      "name": "Celo",
+      "url": "https://api.celoscan.io/api",
+      "apikey": "<your_api_key_here>"
+    },
+    "core": {
+      "name": "Core",
+      "url": "https://api.corescan.io/api",
+      "apikey": "<your_api_key_here>"
+    },
+    "kcc": {
+      "name": "KCC",
+      "url": "https://explorer.kcc.io/en/api",
+      "apikey": "<your_api_key_here>"
+    },
+    "telos": {
+      "name": "Telos",
+      "url": "https://api.teloscan.io/api",
+      "apikey": "<your_api_key_here>"
+    },
+    "aurora": {
+      "name": "Aurora",
+      "url": "https://aurorascan.dev/api",
+      "apikey": "<your_api_key_here>"
+    },
+    "meter": {
+      "name": "Meter",
+      "url": "https://scan.meter.io/api",
+      "apikey": "<your_api_key_here>"
+    },
+    "harmony": {
+      "name": "Harmony",
+      "url": "https://explorer.harmony.one",
+      "apikey": "<your_api_key_here>"
+    },
+    "evmos": {
+      "name": "Evmos",
+      "url": "https://atomscan.com/evmos",
+      "apikey": "<your_api_key_here>"
+    },
+    "fuse": {
+      "name": "Fuse",
+      "url": "https://explorer.fuse.io",
+      "apikey": "<your_api_key_here>"
+    }
+  },
+  "transaction_fields": [
+    "hash",
+    "from",
+    "to",
+    "value",
+    "blockNumber",
+    "blockHash",
+    "gas",
+    "gasPrice",
+    "nonce",
+    "input",
+    "transactionIndex",
+    "type",
+    "gasUsed",
+    "txreceipt_status",
+    "timeStamp"
+  ],
+  "metadata_fields": [
+    "timestamp",
+    "balance",
+    "is_contract"
+  ],
+  "mongodb": {
+    "uri": "mongodb://localhost:27017/",
+    "source_db": "wallets",
+    "source_collection": "addresses",
+    "target_db": "evm_chain_data",
+    "target_collection": "chain_data"
+  },
+  "fourbyte": {
+    "mongodb_uri": "mongodb://localhost:27017/",
+    "database": "fourbyte",
+    "func_signatures": {
+      "collection": "func_signatures",
+      "base_url": "https://www.4byte.directory/signatures/?page=",
+      "start_page": 0,
+      "end_page": 1000,
+      "delay_range": [2, 5]
+    },
+    "event_signatures": {
+      "collection": "event_signatures",
+      "base_url": "https://www.4byte.directory/event-signatures/?page=",
+      "start_page": 0,
+      "end_page": 1000,
+      "delay_range": [2, 5]
+    }
+  },
+  "huggingface_contracts": {
+    "hf_token": "",
+    "base_url": "https://huggingface.co/datasets/andstor/smart_contracts/resolve/main/data/raw/part.{}.parquet",
+    "start_part": 0,
+    "end_part": 1,
+    "contracts_folder": "./contracts",
+    "metadata_folder": "./contract_metadata",
+    "default_contract_name": "UserWallet"
+  }
+}
