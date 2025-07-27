@@ -35,13 +35,13 @@ The tool supports multiple explorers by configuring valid API keys and base URLs
 ---
 ## Subprojects
 
-### 1. `CONTRACTS/`
+### 1. `ABI/`
 
 - Downloads verified smart contract code from Hugging Face.
 - Splits contract files into `.sol` and `.txt` formats.
 - Stores them locally for further analysis or classification.
 
-### 2. `SIGNATURES/`
+### 2. `SIG/`
 
 - Scrapes function and event signatures from [4byte.directory](https://www.4byte.directory/).
 - Converts signatures into hexadecimal selectors.
