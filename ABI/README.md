@@ -1,0 +1,1 @@
+It downloads contract data from Hugging Face in .parquet format, splits each row into contract and metadata parts, and saves them as .sol and .txt files in separate folders. It processes rows from a specified range of files and uses a token for secure access.
